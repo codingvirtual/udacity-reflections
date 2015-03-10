@@ -1,0 +1,65 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	It made it easier to avoid eye fatigue by narrowing my focus on only
+	those lines that had differences. It makes spotting those differences
+	and errors easier and faster.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	In theory, it would be easier to lift out things you had tried in prior
+	versions of the file where maybe part of the code worked and another
+	part didn't.
+
+	It should also help me to see my coding process and my revision process
+	which could lead to efficiencies later as I learn more about the common
+	mistakes I make.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	The pros are that since it's deliberate, you can take these snapshots
+	at specific relevant points of time and you also get to add notes and 
+	comments to the snapshot, which will make it more useful later on.
+
+	In contrast, auto-save can produce so many versions, none with notes,
+	that going back and finding something will take longer than just
+	redoing the work.
+
+	One con of manually choosing when to create a commit is that it's easy
+	to forget to do it and not save versions often enough. Making commits
+	a habit after each completed logic change would be a good idea.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	Programming typically involves changes to multiple files to make one
+	logical programming change. In contrast, typical office files are usually
+	relatively self-contained and there's no need to save them in groups.
+
+How can you use the commands git log and git diff to view the history of files?
+
+	Diff will help to identify what changed between two versions of a file,
+	which will be helpful both in finding bugs but also in reverting if
+	necessary.
+
+	Log is a good way to find out which version you might want to look at
+	based on the notes for that commit entry.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	It makes rolling back to a working version far easier. If you screw up
+	royally, it's a few seconds to get back to what was working and try
+	another route.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	
+	I have been trying to use Git all along and am getting better at using
+	it. I also like that Git is integrated into my IDE's, which should make
+	using it even more efficient, though I do like the process of issuing
+	the commands manually via the command line - makes the knowledge more
+	portable.
+

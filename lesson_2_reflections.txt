@@ -1,0 +1,77 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	It sets up Git to start tracking changes in the directory (and
+	all subdirectories) that you issue the init command in. You need
+	to do it so Git knows where to start (directory-wise) file change
+	tracking.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	The working directory is the most current version of the files with
+	the last saved version in the working directory.
+
+	The staging area contains a copy of the file at the time you chose to
+	add it for tracking.
+
+	The repositry contains a copy of the files that have been stored
+	as a commit. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	By using git add to add only a single file (or group of related files),
+	you can control what gets added in a given commit. Add only those files
+	that belong to a logical change and the commit them. Repeat this process
+	with other files if more than one logical change was made (which should not
+	be the case!)
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	When trying an experimental idea or feature, creating a branch and then working
+	on the branch is a good way to test. If it works, you can merge the branch back
+	to the master, and if it fails, you can just switch back to master (and even
+	delete the experimental branch if you want).
+
+	In the interview, the guy talked about how he uses branches heavily to compartmentalize
+	his work, which allows him to work on modules, features, or experiments as an
+	individual unit.
+
+	He can then use branches to switch contexts and work on some other aspect of the project
+	or even to go work on some other aspect if he just gets bored with what he's working
+	on in the moment.
+
+	The Master branch should always contain production code - the best quality code. All
+	work-in-progress should be on branches which end up getting merged back into the
+	Master branch when completed.
+
+	In a collaborative environment, branches can be used to allow individuals to work on
+	their part of a project without holding the entire project in their hands. The branching
+	allows each collaborator to work on their part without having to worry about stuff
+	others are working on. As the work is completed, each collaborator merges their branch
+	back into the Master and thus combines their work back into the larger project.
+
+	If after working down a branch (in particular a bug-fix branch), you decide that the branch
+	is good and should be the new master, you can switch the master to point to the tip of
+	said branch.
+
+How do the diagrams help you visualize the branch structure?
+
+	The diagrams really helped me understand how Git keeps track of things using the notion
+	of a commit having a parent. To both create and checkout a branch in one step, use
+	git checkout -b new_branch_name. This is the same as doing these two commands:
+	git branch new_branch_name
+	git checkout new_branch_name
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+       Merging does essentially a line-by-line comparison of all the changes since the branches had
+       a common file base. It creates an updated Master branch that has two parents: the tips of both
+       of the prior branches. It is for this reason that the node is depicted the way it is in the videos.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+       The pros of the automatic merge is that it can resolve all of the straight-forward changes by
+       itself without intervention - that's much faster than having to manually merge every time. The
+       con is that the process to understand the differences that two different people have made is
+       a bit complicated in the way that Git marks the changes.
+
+
