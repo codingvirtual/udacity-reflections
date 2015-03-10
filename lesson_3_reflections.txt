@@ -11,3 +11,14 @@ When would you want to use a remote repository rather than keeping all your work
 			machine so you can see the code someone else wrote, alter it and compile your
 			own version, or just run it.
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	You'd want to stay in control of your code base locally and if Git tried to keep things 
+	up to date manually, you could spend all of your time resolving conflicts potentially,
+	etc. Also, it would generate a lot of network traffic and could slow things down if 
+	it's a big project with lots of collaborators.
+
+	For the same reasons you want to control local commits and git, you'd want to control
+	remotes. Also, it's possible to have more than one remote, so git could get confused
+	about which remote it should stay in sync with.
+
