@@ -22,3 +22,18 @@ Why might you want to always pull changes manually rather than having Git automa
 	remotes. Also, it's possible to have more than one remote, so git could get confused
 	about which remote it should stay in sync with.
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	Forks make a copy of an existing Github repo to your personal Github account. The copy
+	includes all the commits of the original repo but allows you to make changes going forward.
+	Forks are not a git command, but rather are specific to GitHUB.
+
+	Clone is a git command that allows git to make a copy of a remote repo to the local 
+	machine. It also sets up a remote for the clone so that after you make changes and
+	commit those changes, you can just type git push and push the changes back up to the remote
+	that you originally cloned from.
+
+	Branch is a git command that is sort of like fork but on your own repo. It creates a new
+	git "chain" starting with the node in the commit list that you were at when you issued
+	the branch command.
+
