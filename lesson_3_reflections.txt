@@ -1,1 +1,13 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
+	Remote repositories will help with multiple issues:
+		a)	Multiple collaborators working on a single project. The repo serves as a
+			collection point for the combined file set.
+		b)	Backups - by setting up a remote, it's easy to push the commits up to the
+			remote, which serve as a backup if something happened to the local machine.
+		c)	Sharing - github makes it easy to share a project with others either for
+			viewing or for collaborative editing
+		d)	Code retrieval - remote repos are easy to clone and pull down to your local
+			machine so you can see the code someone else wrote, alter it and compile your
+			own version, or just run it.
+
